@@ -116,11 +116,11 @@ analisis_1(ind,pre,1657.6,act,'Scenario 0',pro)
 ```
 
 
-![png](output_5_0.png)
+![](https://github.com/highjoule/prices_prediction/blob/main/images/scen0_1.png)
 
 
 
-![png](output_5_1.png)
+![](https://github.com/highjoule/prices_prediction/blob/main/images/scen0_2.png)
 
 
 ### Scenario 1
@@ -133,12 +133,11 @@ analisis_1(ind,pre,1800,act,'Scenario 1',pro)
 ```
 
 
-![png](output_7_0.png)
+![](https://github.com/highjoule/prices_prediction/blob/main/images/scen1_1.png)
 
 
 
-![png](output_7_1.png)
-
+![](https://github.com/highjoule/prices_prediction/blob/main/images/scen1_2.png)
 
 ### Scenario 2
 
@@ -150,11 +149,11 @@ analisis_1(ind,pre,2000,act,'Scenario 2',pro)
 ```
 
 
-![png](output_9_0.png)
+![](https://github.com/highjoule/prices_prediction/blob/main/images/scen2_1.png)
 
 
 
-![png](output_9_1.png)
+![](https://github.com/highjoule/prices_prediction/blob/main/images/scen2_2.png)
 
 
 ### Scenario 3
@@ -167,11 +166,11 @@ analisis_1(ind,pre,2400,act,'Scenario 3',pro)
 ```
 
 
-![png](output_11_0.png)
+![](https://github.com/highjoule/prices_prediction/blob/main/images/scen3_1.png)
 
 
 
-![png](output_11_1.png)
+![](https://github.com/highjoule/prices_prediction/blob/main/images/scen3_2.png)
 
 
 ## Conclusion
