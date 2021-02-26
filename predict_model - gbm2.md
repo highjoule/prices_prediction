@@ -167,13 +167,23 @@ A common This stochastic process has two components, a long-term trend and a sho
 
 The long-term trend of the stock price is stored in this component. Dirft is rather a constant value and correnponds to the trend of the historical data. In order to reflect this in the calculations, mean and standard deviation of the return within the data interval of our data is needed. In other words, the mean and standard deviation of the daily growth is needed.
 
+![](https://latex.codecogs.com/gif.latex?drift_{k}&space;=&space;\mu&space;-&space;\frac{1}{2}\sigma^{2})
+
 ## Diffusion
 
 in order to calculate the short-term fluctuations, diffusion will do the job. This will help to compute different scenarios given by normal random values. These random numbers will multiply standard deviation of the historical return and will produce random day-by-day fluctuations on our simulations.
 
+![](https://latex.codecogs.com/gif.latex?diffusion_{k}&space;=&space;\sigma&space;z_{k})
+
 ## Model coding
 
-The formula that makes the prediction of the next day is expressed as follows:
+The formula that makes the prediction of the next day is an exponential growth expressed as follows:
+
+![](https://latex.codecogs.com/gif.latex?S_{k}&space;=&space;S_{k-1}&space;*&space;e^{(drift_{k}&plus;diffusion_{k})})
+
+If we substitute drift and diffusion in the previous formula, we get:
+
+![](https://latex.codecogs.com/gif.latex?S_{k}&space;=&space;S_{k-1}&space;*&space;e^{(\mu&space;-&space;\frac{1}{2}&space;\sigma^{2}&space;&plus;&space;\sigma&space;z_{k})})
 
 Below can be seen the model that allows the multiple predictions. With this, is possible to compute multiple scenarios that allows to analyse probabilities distributions along the predicted year.
 
@@ -234,7 +244,7 @@ S1 = gbm(data,dt,T,N,t,esc)
 ```
 
 
-![png](output_7_0.png)
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/3scenarios.png)
 
 
 # Model prediction
@@ -254,7 +264,7 @@ S1 = gbm(data,dt,T,N,t,esc)
 ```
 
 
-![png](output_9_0.png)
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/1000sce.png)
 
 
 
@@ -335,78 +345,30 @@ for k in np.arange(13):
 ```
 
 
-![png](output_16_0.png)
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/feb1.png)
+
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/mar.png)
+
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/abr.png)
+
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/may.png)
+
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/jun.png)
+
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/jul.png)
+
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/ago.png)
+
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/sep.png)
+
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/oct.png)
+
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/nov.png)
+
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/dic.png)
+
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/ene2.png)
+
+![](https://github.com/highjoule/prices_prediction/blob/main/images/gbm2/feb22.png)
 
 
-
-![png](output_16_1.png)
-
-
-
-![png](output_16_2.png)
-
-
-
-![png](output_16_3.png)
-
-
-
-![png](output_16_4.png)
-
-
-
-![png](output_16_5.png)
-
-
-
-![png](output_16_6.png)
-
-
-
-![png](output_16_7.png)
-
-
-
-![png](output_16_8.png)
-
-
-
-![png](output_16_9.png)
-
-
-
-![png](output_16_10.png)
-
-
-
-![png](output_16_11.png)
-
-
-
-![png](output_16_12.png)
-
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
