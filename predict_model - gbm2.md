@@ -171,7 +171,7 @@ The long-term trend of the stock price is stored in this component. Dirft is rat
 
 ## Diffusion
 
-in order to calculate the short-term fluctuations, diffusion will do the job. This will help to compute different scenarios given by normal random values. These random numbers will multiply standard deviation of the historical return and will produce random day-by-day fluctuations on our simulations.
+In order to calculate the short-term fluctuations, diffusion will do the job. This will help to compute different scenarios given by normal random values. These random numbers will multiply standard deviation of the historical return and will produce random day-by-day fluctuations on our simulations.
 
 ![](https://latex.codecogs.com/gif.latex?diffusion_{k}&space;=&space;\sigma&space;z_{k})
 
