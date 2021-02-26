@@ -249,7 +249,7 @@ S1 = gbm(data,dt,T,N,t,esc)
 
 # Model prediction
 
-A simulation of 1000 scenarios are generated to be able to analyse montly distributions, thus generating a large amount of data and have the most information available to make a decision in this example.
+A simulation of 1000 scenarios are generated to be able to analyse montly distributions, thus generating a large amount of data and have the most information available to make a decision in this example. 
 
 
 ```python
@@ -297,7 +297,7 @@ The next months are stored in an array and the mean and standard deviation are a
 
 
 ```python
-mdt = 4*md.transpose()
+mdt = 4*md.transpose()#For this example a factor regarding money conversion is applied
 
 feb,mar,abr,may,jun,jul,ago,sep,ocb,nov,dic,ene,feb2 = mdt[0],mdt[1],mdt[2],mdt[3],mdt[4],mdt[5],mdt[6],mdt[7],mdt[8],mdt[9],mdt[10],mdt[11],mdt[12]
 
