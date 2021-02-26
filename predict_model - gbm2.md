@@ -161,7 +161,7 @@ data
 
 # Geometric Brownian Motion
 
-A common This stochastic process has two components, a long-term trend and a short-term fluctuations. These two parts are also known as drift and diffusion respectively. I will provide very useful information for the understanding of this concept, since that was the base of the developing of this model. This [article](https://towardsdatascience.com/simulating-stock-prices-in-python-using-geometric-brownian-motion-8dfd6e8c6b18) results very useful to code GBM.
+This stochastic process has two components, a long-term trend and a short-term fluctuations. These two parts are also known as drift and diffusion respectively. I will provide very useful information for the understanding of this concept, since that was the base of the developing of this model. This [article](https://towardsdatascience.com/simulating-stock-prices-in-python-using-geometric-brownian-motion-8dfd6e8c6b18) results very useful to code GBM.
 
 ## Drift
 
